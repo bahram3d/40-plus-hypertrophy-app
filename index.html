@@ -9,9 +9,31 @@
   <meta name="theme-color" content="#ff6600">
 </head>
 <body>
-  <h1>Hypertrophy 40+ PWA</h1>
-  <p>Install this page, then build the app.</p>
-  <script src="js/app.js"></script>
+  <nav>
+    <button id="tab-onboarding" class="active">Setup</button>
+    <button id="tab-plan">Plan</button>
+    <button id="tab-log">Log</button>
+  </nav>
+
+  <section id="view-onboarding">
+    <h2>Quick Setup</h2>
+    <label>Body-weight (kg)<input id="bw" type="number" value="74"></label>
+    <label>Wrist pain 0-10<input id="wrist" type="range" min="0" max="10" value="0"></label>
+    <button id="save-user">Save & Build Plan</button>
+  </section>
+
+  <section id="view-plan" hidden>
+    <h2>This Week</h2>
+    <div id="plan-view"></div>
+  </section>
+
+  <section id="view-log" hidden>
+    <h2>Today’s Session</h2>
+    <div id="log-view"></div>
+    <button id="save-session">Save Session</button>
+  </section>
+
+  <script src="js/app.js" type="module"></script>
   <script>navigator.serviceWorker.register('service-worker.js');</script>
 </body>
 </html>

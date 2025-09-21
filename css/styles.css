@@ -1,1 +1,6 @@
-body{font-family:system-ui;background:#0d0d0d;color:#fff;margin:0;padding:2rem}
+:root{--bg:#1a1a1a;--text:#fff;--accent:#ff6600}
+body{margin:0;font-family:system-ui;background:var(--bg);color:var(--text);}
+nav{display:flex;gap:.25rem}nav button{flex:1;padding:.75rem;border:0;background:#222;color:var(--text)}
+nav button.active{background:var(--accent)}
+section{padding:1rem}label{display:block;margin:.5rem 0}
+input{width:100%;padding:.5rem}button{cursor:pointer}
