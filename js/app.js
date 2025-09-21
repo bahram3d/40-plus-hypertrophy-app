@@ -1,0 +1,1 @@
+console.log("H40 PWA ready");
